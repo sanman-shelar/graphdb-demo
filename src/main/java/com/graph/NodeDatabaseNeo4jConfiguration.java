@@ -17,7 +17,7 @@ import org.springframework.data.neo4j.transaction.Neo4jTransactionManager;
 @Configuration
 @ComponentScan("com.graph")
 @EnableNeo4jRepositories(basePackages = "com.graph")
-public class MovieDatabaseNeo4jConfiguration {
+public class NodeDatabaseNeo4jConfiguration {
 
 	@Bean(destroyMethod = "shutdown")
 	public GraphDatabaseService graphDatabaseService() {
